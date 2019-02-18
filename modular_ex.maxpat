@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 2308.0, 179.0, 731.0, 661.0 ],
+		"rect" : [ 2307.0, 178.0, 731.0, 661.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -83,7 +83,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 278.0, 608.0, 50.0, 35.0 ],
-					"text" : "a b c d e"
+					"text" : "a b 5 d e"
 				}
 
 			}
@@ -104,10 +104,10 @@
 					"id" : "obj-61",
 					"maxclass" : "newobj",
 					"numinlets" : 4,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 276.0, 472.0, 58.0, 22.0 ],
-					"text" : "unpack-n",
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 276.0, 472.0, 51.0, 22.0 ],
+					"text" : "unjoin-n",
 					"varname" : "unpacker"
 				}
 
@@ -659,6 +659,41 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
+					"source" : [ "obj-61", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 4 ],
+					"source" : [ "obj-61", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 3 ],
+					"source" : [ "obj-61", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 2 ],
+					"source" : [ "obj-61", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 1 ],
+					"source" : [ "obj-61", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -765,7 +800,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "unpack-n.maxpat",
+				"name" : "unjoin-n.maxpat",
 				"bootpath" : "~/dev/3d-panner",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

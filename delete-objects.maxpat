@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 721.0, 141.0, 360.0, 552.0 ],
+		"rect" : [ 725.0, 172.0, 360.0, 552.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -67,7 +67,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 37.0, 7.0, 70.0, 33.0 ],
+					"patching_rect" : [ 37.0, 7.0, 73.0, 33.0 ],
 					"text" : "# of objects to leave"
 				}
 
@@ -116,7 +116,7 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 52.0, 44.0, 30.0, 30.0 ]
 				}
 
